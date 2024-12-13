@@ -13,6 +13,14 @@ import torch.nn as nn
 
 sys.path.insert(0, osp.dirname(osp.dirname(osp.abspath(__file__))))
 
+from sscma.utils import lazy_import
+
+lazy_import("git+https://github.com/alibaba/TinyNeuralNetwork.git", "tinynn")
+def before_import():
+    pass
+
+before_import() 
+
 from tinynn.graph.quantization.quantizer import QATQuantizer, PostQuantizer
 from tinynn.util.train_util import AverageMeter
 from tinynn.graph.tracer import model_tracer

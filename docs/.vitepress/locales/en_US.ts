@@ -33,18 +33,68 @@ function sidebar() {
             text: 'Introduction',
             collapsed: false,
             items: [
-                { text: 'What is SSCMA?', link: '/en/introduction/overview' },
-                { text: 'Quick Start', link: '/en/introduction/quick_start' },
+                { text: 'What is SSCMA?', link: '/introduction/overview' },
+                { text: 'Quick Start', link: '/introduction/quick_start' },
+                { text: 'Installation', link: '/introduction/installation' }
             ]
         },
+        {
+            text: 'Tutorials',
+            collapsed: false,
+            items: [
+                { text: 'Config', link: '/tutorials/config' },
+                { text: 'Datasets', link: '/tutorials/datasets' },
+                {
+                    text: 'Training',
+                    link: '/tutorials/training/overview',
+                    items: [
+                        { text: 'FOMO Model', link: '/tutorials/training/fomo' },
+                        { text: 'PFLD Model', link: '/tutorials/training/pfld' },
+                        { text: 'YOLO Model', link: '/tutorials/training/yolo' },
 
+                    ]
+                },
+                {
+                    text: 'Export',
+                    link: '/tutorials/export/overview',
+                    items: [
+                        { text: 'PyTorch to ONNX', link: '/tutorials/export/pytorch_2_onnx' },
+                        { text: 'PyTorch to TFLite', link: '/tutorials/export/pytorch_2_tflite' }
+                    ]
+                }
+            ]
+        },
+        {
+            text: 'Deploy',
+            collapsed: false,
+            link: '/deploy/overview',
+            items: [
+                {
+                    text: 'ESP32 - Deploy',
+                    link: '/deploy/esp32/deploy',
+                    items: [
+                        { text: 'ESP32 Mask Detection', link: '/deploy/esp32/mask_detection' },
+                        { text: 'ESP32 Meter Reader', link: '/deploy/esp32/meter_reader' }
+                    ]
+                },
+                {
+                    text: 'Grove - Deploy',
+                    link: '/deploy/grove/deploy',
+                    items: [
+                        { text: 'Grove Mask Detection', link: '/deploy/grove/mask_detection' },
+                        { text: 'Grove Meter Reader', link: '/deploy/grove/meter_reader' },
+                        { text: 'Grove Digital Meter', link: '/deploy/grove/digital_meter' }
+                    ]
+                }
+            ]
+        },
         {
             text: 'Edge Impulse',
             collapsed: false,
             items: [
                 {
                     text: 'Machine Learning Blocks',
-                    link: '/en/edgeimpulse/ei_ml_blocks',
+                    link: '/edgeimpulse/ei_ml_blocks',
                 },
             ]
         },
@@ -52,10 +102,10 @@ function sidebar() {
             text: 'Community',
             collapsed: false,
             items: [
-                { text: 'FAQs', link: '/en/community/faqs' },
-                { text: 'Reference', link: '/en/community/reference' },
-                { text: 'Contribution', link: '/en/community/contributing' },
-                { text: 'Copyrights and Licenses', link: '/en/community/license' }
+                { text: 'FAQs', link: '/community/faqs' },
+                { text: 'Reference', link: '/community/reference' },
+                { text: 'Contribution', link: '/community/contributing' },
+                { text: 'Copyrights and Licenses', link: '/community/license' }
             ]
         }
     ]

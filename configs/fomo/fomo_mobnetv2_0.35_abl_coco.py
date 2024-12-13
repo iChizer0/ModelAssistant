@@ -38,7 +38,7 @@ widen_factor = 0.35
 # DATA
 dataset_type = CustomFomoCocoDataset
 # datasets link: https://public.roboflow.com/object-detection/mask-wearing
-data_root = "/home/dq/code/sscma/datasets/hES8s8Gy7u"
+data_root = "https://public.roboflow.com/ds/lNNyP4Xe8W?key=7EoRgJr2hl"
 
 train_ann = "train/_annotations.coco.json"
 train_data = "train/"
